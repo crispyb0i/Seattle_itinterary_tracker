@@ -2,10 +2,9 @@
 
 <h4>Description: <%=@location.description%></h4>
 <br>
-<h4><a href="<%=@location.website%>">website</a> |
+<h4><span class="glyphicon glyphicon-globe"></span> <a href="<%=@location.website%>">website</a> |
   <% if @location.phone_number != "n/a"%>
-  <%=@location.phone_number%> |
+    <span class="glyphicon glyphicon-phone"><%=@location.phone_number%></span> |
   <% end %>
-  <%=@location.street_address%> <%=@location.city_state%></h4>
-
+  <span class="glyphicon glyphicon-map-marker"></span> <%=@location.street_address%> <%=@location.city_state%></h4>
 <img src="<%=@location.main_image%>" alt="">

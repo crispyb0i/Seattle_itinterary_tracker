@@ -20,4 +20,11 @@ img {
   display: block;
   margin: auto;
   width: 200px;
+  height: 150px;
+}
+
+.featured {
+  display: inline-block;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
