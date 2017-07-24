@@ -1,7 +1,11 @@
 <h1><%=@location.name%></h1>
 
-<h3>description:<%=@location.description%></h3>
+<h4>Description: <%=@location.description%></h4>
 <br>
-<h4><%=@location.website%> || <%=@location.phone_number%> || <%=@location.street_address%> <%=@location.city_state%></h4>
+<h4><a href="<%=@location.website%>">website</a> |
+  <% if @location.phone_number != "n/a"%>
+  <%=@location.phone_number%> |
+  <% end %>
+  <%=@location.street_address%> <%=@location.city_state%></h4>
 
 <img src="<%=@location.main_image%>" alt="">

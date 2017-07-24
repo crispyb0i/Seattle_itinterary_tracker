@@ -18,3 +18,47 @@ Location.create!(
   main_image: "http://images.mentalfloss.com/sites/default/files/styles/insert_main_wide_image/public/iStock_000013115260_Small.jpg",
   main_attraction: true
   )
+
+  Location.create!(
+    name: "Freemont Troll",
+    description: "An 18-foot tall stone troll that lives under the Aurora Avenue Bridge.",
+    phone_number: "n/a",
+    website: "http://fremont.com/about/fremonttroll-html/",
+    street_address: "North 36th St.",
+    city_state: "Seattle, WA",
+    main_image: "https://www.spaceneedle.com/news/wp-content/uploads/2016/08/fremont-troll-1.jpg",
+    main_attraction: true
+    )
+
+  Location.create!(
+    name: "Chihuly Garden",
+    description: "Located in the heart of Seattle, Chihuly Garden and Glass provides a look at the inspiration and influences that inform the career of artist Dale Chihuly. Through the exhibition’s eight interior galleries, lush outdoor garden and centerpiece Glasshouse visitors will experience a comprehensive look at Chihuly's most significant series of work. With both day and night experiences, and full-service dining in the adjoining Collections Café, this long-term exhibition offers a unique experience rain or shine.",
+    phone_number: "(206)753-4940",
+    website: "http://fremont.com/about/fremonttroll-html/",
+    street_address: "305 Harrison Street",
+    city_state: "Seattle, WA",
+    main_image: "http://static-25.sinclairstoryline.com/resources/media/34987582-ab5d-4e14-a6ec-4d64f4a6a575-COVERChihulyGardenandGlassbyMelanieBiehleforSeattleRefined.jpg",
+    main_attraction: true
+    )
+
+  Location.create!(
+    name: "Gum Wall",
+    description: "The Market Theater Gum Wall is a brick wall covered in used chewing gum, in an alleyway in downtown Seattle. It is located in Post Alley under Pike Place Market. Similar to Bubblegum Alley in San Luis Obispo, California, the Market Theater Gum Wall is a local landmark.",
+    phone_number: "n/a",
+    website: "https://www.facebook.com/TheGumWall",
+    street_address: "1428 Post Aly",
+    city_state: "Seattle, WA",
+    main_image: "http://res.cloudinary.com/sagacity/image/upload/c_crop,h_900,w_1600,x_0,y_0/c_limit,w_1080/v1446592174/15285489256_35f50ba2c6_o_cfdcq4.jpg",
+    main_attraction: true
+    )
+
+  Location.create!(
+    name: "Seattle Japanese Garden",
+    description: "The Seattle Japanese Garden is a 3.5 acre Japanese garden in the Madison Park neighborhood of Seattle. The garden is located in the southern end of the Washington Park Arboretum on Lake Washington Boulevard East.",
+    phone_number: "(206)684-4725",
+    website: "https://www.seattlejapanesegarden.org/",
+    street_address: "1075 Lake Washington Blvd E",
+    city_state: "Seattle, WA",
+    main_image: "https://static1.squarespace.com/static/57843c49440243c511147fed/t/584b055cb8a79b3b208bd9ba/1481580504748/heronGardenPartyOriginal.jpg?format=2500w",
+    main_attraction: false
+    )
