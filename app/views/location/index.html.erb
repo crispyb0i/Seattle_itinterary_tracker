@@ -1,0 +1,10 @@
+<br>
+<h1>Welcome to Seattle</h1>
+<h3>Main Attractions:</h3>
+<% @locations.each do |location| %>
+<div><%= link_to location.name, location_path(location) %>
+    <br>
+    <img src="<%=location.main_image%>" alt="<%= location.name %>">
+  </div>
+  <% end %>
+</div>
