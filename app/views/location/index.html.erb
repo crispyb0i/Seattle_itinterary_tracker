@@ -1,10 +1,11 @@
 <br>
-<h1>Welcome to Seattle</h1>
+<h1 class="jumbotron">Welcome to Seattle</h1>
 <a href="https://www.accuweather.com/en/us/seattle-wa/98104/weather-forecast/351409" class="aw-widget-legal">
 <!--
 By accessing and/or using this code snippet, you agree to AccuWeather’s terms and conditions (in English) which can be found at https://www.accuweather.com/en/free-weather-widgets/terms and AccuWeather’s Privacy Statement (in English) which can be found at https://www.accuweather.com/en/privacy.
 -->
 </a><div id="awcc1501020395773" class="aw-widget-current"  data-locationkey="351409" data-unit="f" data-language="en-us" data-useip="false" data-uid="awcc1501020395773"></div><script type="text/javascript" src="https://oap.accuweather.com/launch.js"></script>
+
 <div id="featured_locations">
   <h3>Popular Attractions</h3>
   <div class="row featured">
@@ -13,7 +14,6 @@ By accessing and/or using this code snippet, you agree to AccuWeather’s terms 
         <% if location.main_attraction %>
           <a href="/location/<%=location.id%>"><div>
             <h4><%=location.name%></h4>
-              <br>
               <img id="main_image" src="<%=location.main_image%>" alt="<%= location.name %>">
             </div>
           </a>
