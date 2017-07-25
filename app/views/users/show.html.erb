@@ -1,2 +1,16 @@
 <h1><%=current_user.email%></h1>
-<p>Find me in app/views/users/show.html.erb</p>
+<% if current_user.itinerary.length == 0 %>
+  <h3>There are currently no locations in your itinerary</h3>
+<% else %>
+<h3>Your Itinerary:</h3>
+  <div class="row">
+    <% @locations.each do |location| %>
+      <a href="/location/<%=location%>"><div>
+        <div class="col-md-4">
+          <h4><%=Location.find(location).name%></h4>
+          <img src="<%=Location.find(location).main_image%>" alt="">
+        </div>
+      </div></a>
+    <% end %>
+  </div>
+<% end %>

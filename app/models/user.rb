@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  belongs_to :location
+  has_many :locations
   has_many :comments
   has_many :images
   # Include default devise modules. Others available are:

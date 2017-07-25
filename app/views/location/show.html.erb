@@ -1,6 +1,6 @@
 <h1><%=@location.name%></h1>
 
-<h4>Description: <%=@location.description%></h4>
+<h4><%=@location.description%></h4>
 <br>
 <h4><span class="glyphicon glyphicon-globe"></span> <a href="<%=@location.website%>">website</a> |
   <% if @location.phone_number != "n/a"%>
@@ -8,3 +8,11 @@
   <% end %>
   <span class="glyphicon glyphicon-map-marker"></span> <%=@location.street_address%> <%=@location.city_state%></h4>
 <img src="<%=@location.main_image%>" alt="">
+
+<% if current_user %>
+  <% if current_user.itinerary.include?(@location.id) %>
+    <%= button_to 'Remove from itinerary', remove_itinerary_path, :method => :patch %>
+  <% else %>
+    <%= button_to 'Add to itinerary', itinerary_path, :method => :patch %>
+  <% end %>
+<% end %>

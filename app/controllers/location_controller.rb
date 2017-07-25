@@ -16,28 +16,26 @@ class LocationController < ApplicationController
  def delete
  end
 
- # def favorite
- #   @account = Account.find_by user_id:current_user.id
- #   product_id = params[:id].to_i
- #   @product = Product.find(product_id)
- #   @account.favorite.push(product_id)
- #   @account.save
- #   respond_to do |format|
- #     format.html { redirect_to product_path(current_user)}
- #     format.js
- #   end
- #
- # end
- #
- # def unfavorite
- #   @account = Account.find_by user_id:current_user.id
- #   product_id = params[:id].to_i
- #   @product = Product.find(product_id)
- #   @account.favorite.delete(product_id)
- #   @account.save
- #   respond_to do |format|
- #     format.html { redirect_to product_path(current_user)}
- #     format.js
- #   end
- # end
+ def itinerary
+   user = current_user
+   location_id = params[:id].to_i
+   location = Location.find(location_id)
+   user.itinerary.push(location_id)
+   if user.save
+     puts "saved"
+   else
+     binding.pry
+     puts user.errors
+   end
+   redirect_to location_path(location)
+ end
+
+   def remove_itinerary
+   user = current_user
+   location_id = params[:id].to_i
+   location = Location.find(location_id)
+   user.itinerary.delete(location_id)
+   user.save
+   redirect_to location_path(location)
+   end
 end

@@ -7,6 +7,9 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Location.destroy_all
+User.destroy_all
+Comment.destroy_all
+Image.destroy_all
 
 Location.create!(
   name: "Space Needle",
@@ -61,4 +64,26 @@ Location.create!(
     city_state: "Seattle, WA",
     main_image: "https://static1.squarespace.com/static/57843c49440243c511147fed/t/584b055cb8a79b3b208bd9ba/1481580504748/heronGardenPartyOriginal.jpg?format=2500w",
     main_attraction: false
+    )
+
+  Location.create!(
+    name: "First Starbucks",
+    description: "See where it all started: America's most popular coffeehouse is Seattle's biggest claim to fame.",
+    phone_number: "(206)448-8762",
+    website: "https://www.starbucks.com/coffeehouse/store-design/1st-and-pike",
+    street_address: "102 Pike Street",
+    city_state: "Seattle, WA",
+    main_image: "https://d35hy9imunucut.cloudfront.net/media/1912pike/2016/05/31/1912-pike-store-02.jpg",
+    main_attraction: true
+    )
+
+  Location.create!(
+    name: "Hammering Man",
+    description: "Hammering Man is a series of monumental kinetic sculptures designed by Jonathan Borofsky which have been installed in various cities around the world.",
+    phone_number: "n/a",
+    website: "http://samblog.seattleartmuseum.org/2015/09/the-hammering-man-is-the-worker-in-all-of-us/",
+    street_address: "1300 1st Ave",
+    city_state: "Seattle, WA",
+    main_image: "https://i.ytimg.com/vi/9c6bKkGoZbY/maxresdefault.jpg",
+    main_attraction: true
     )

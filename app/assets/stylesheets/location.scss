@@ -6,6 +6,10 @@ h1 {
   text-align: center;
 }
 
+h3 {
+  text-align: center;
+}
+
 h4 {
   text-align: center;
 }
@@ -23,6 +27,9 @@ img {
   height: 150px;
 }
 
+#featured_locations {
+  border:1px solid black;
+}
 .featured {
   display: inline-block;
   overflow-x: scroll;
