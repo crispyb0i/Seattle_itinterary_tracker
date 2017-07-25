@@ -8,13 +8,9 @@ Rails.application.routes.draw do
   patch '/location/:id/itinerary' => 'location#itinerary', as: 'itinerary'
   patch '/location/:id/remove_itinerary' => 'location#remove_itinerary', as: 'remove_itinerary'
 
-  resources :users
+  resources :users, :only => [:show]
 
-  resources :location do
+  resources :location, :only => [:index,:show] do
     resources :comments
-  end
-
-  resources :location do
-    resources :images
   end
 end
