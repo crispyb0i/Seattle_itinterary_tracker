@@ -7,7 +7,7 @@
     <span class="glyphicon glyphicon-phone"><%=@location.phone_number%></span> |
   <% end %>
   <span class="glyphicon glyphicon-map-marker"></span> <%=@location.street_address%> <%=@location.city_state%></h4>
-<img src="<%=@location.main_image%>" alt="">
+<img src="<%=@location.main_image%>" class="img-rounded" alt="">
 
 <% if current_user %>
   <% if current_user.itinerary.include?(@location.id) %>
