@@ -14,9 +14,13 @@
 
   <body>
     <div class="container">
-      <div id="navbar">
+      <div id="navbar navbar-left">
         <% if current_user %>
           <span class="glyphicon glyphicon-home"></span> <%= link_to "home", "/" %> | <span class="glyphicon glyphicon-user"></span> <%= link_to current_user.email, user_path(current_user) %> | <span class="glyphicon glyphicon-log-out"></span> <%= link_to "Sign out", destroy_user_session_path, :method =>'delete' %>
+          <span class="navbar-right"> <%= form_tag(search_path, :method => "get", id: "search-form") do %>
+             <%= text_field_tag :search, params[:search], placeholder: "Search Locations" %>
+             <%= submit_tag "Search", :name => nil %>
+           <% end %></span>
         <% else %>
           <span class="glyphicon glyphicon-home"></span> <%= link_to "home", "/" %> | <span class="glyphicon glyphicon-edit"></span> <%= link_to "Sign up", '/users/sign_up' %> | <span class="glyphicon glyphicon-user"></span> <%= link_to "Sign in", '/users/sign_in' %>
         <% end %>

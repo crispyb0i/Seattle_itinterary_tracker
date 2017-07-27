@@ -7,6 +7,15 @@ class LocationController < ApplicationController
     @location = Location.find(params[:id])
   end
 
+  def search
+    search_result = params[:search]
+    if search_result
+      @searched_locations = Location.search(search_result).order("created_at DESC")
+    else
+      @searched_locations = Location.all.order("created_at DESC")
+    end
+  end
+
   def create
   end
 

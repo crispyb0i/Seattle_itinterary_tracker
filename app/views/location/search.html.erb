@@ -1,0 +1,15 @@
+<h1>Your search results:</h1>
+<% if @searched_locations == [] %>
+  <h4>Search results not found</h4>
+<% else %>
+  <% @searched_locations.each do |location| %>
+    <div class="col-md-3 thumbnail">
+      <a href="/location/<%=location.id%>"><div>
+        <h4><%=location.name%></h4>
+          <img class="img-rounded main_image" src="<%=location.main_image%>" alt="<%= location.name %>">
+        </div>
+      </a>
+      <br>
+    </div>
+  <% end %>
+<% end %>
