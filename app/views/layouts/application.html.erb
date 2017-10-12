@@ -3,6 +3,8 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Antic+Slab" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister" rel="stylesheet">
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
     <title>CapstoneProject</title>
@@ -25,7 +27,11 @@
           <span class="glyphicon glyphicon-home"></span> <%= link_to "home", "/" %> | <span class="glyphicon glyphicon-edit"></span> <%= link_to "Sign up", '/users/sign_up' %> | <span class="glyphicon glyphicon-user"></span> <%= link_to "Sign in", '/users/sign_in' %>
         <% end %>
      </div>
-     <%= yield %>
     </div>
+
+    <div class="container">
+      <%= yield %>
+    </div>
+
   </body>
 </html>

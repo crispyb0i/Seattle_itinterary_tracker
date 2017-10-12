@@ -3,10 +3,10 @@
   <h4>Search results not found</h4>
 <% else %>
   <% @searched_locations.each do |location| %>
-    <div class="col-md-3 thumbnail">
+    <div class="col-md-4 thumbnail">
       <a href="/location/<%=location.id%>"><div>
         <h4><%=location.name%></h4>
-          <img class="img-rounded main_image" src="<%=location.main_image%>" alt="<%= location.name %>">
+          <img id="search_picture" class="img-rounded main_image" src="<%=location.main_image%>" alt="<%= location.name %>">
         </div>
       </a>
       <br>

@@ -1,11 +1,10 @@
 <br>
-<h1 class="jumbotron">Welcome to Seattle</h1>
+<h1 class="jumbotron" id="main_title">Welcome to Seattle</h1>
+
 <img id="homepage_image" class="img-rounded" src="http://davidbalyeat.com/wp-content/uploads/seattle-skyline-night-space-needle-mount-rainier-high-definition-hd-professional-photography.jpg" alt="">
-<a href="https://www.accuweather.com/en/us/seattle-wa/98104/weather-forecast/351409" class="aw-widget-legal">
-<!--
-By accessing and/or using this code snippet, you agree to AccuWeather’s terms and conditions (in English) which can be found at https://www.accuweather.com/en/free-weather-widgets/terms and AccuWeather’s Privacy Statement (in English) which can be found at https://www.accuweather.com/en/privacy.
--->
-</a><div id="awcc1501020395773" class="aw-widget-current"  data-locationkey="351409" data-unit="f" data-language="en-us" data-useip="false" data-uid="awcc1501020395773"></div><script type="text/javascript" src="https://oap.accuweather.com/launch.js"></script>
+<a href="https://www.accuweather.com/en/us/seattle-wa/98104/weather-forecast/351409" class="aw-widget-legal"></a>
+<div id="awcc1501020395773" class="aw-widget-current"  data-locationkey="351409" data-unit="f" data-language="en-us" data-useip="false" data-uid="awcc1501020395773"></div>
+<script type="text/javascript" src="https://oap.accuweather.com/launch.js"></script>
 
 <div id="featured_locations">
   <h3>Popular Attractions</h3>
@@ -13,7 +12,8 @@ By accessing and/or using this code snippet, you agree to AccuWeather’s terms 
     <% @locations.limit(8).each do |location| %>
       <% if location.main_attraction %>
         <div class="col-md-3 thumbnail">
-          <a href="/location/<%=location.id%>"><div>
+          <a href="/location/<%=location.id%>">
+            <div>
             <h4><%=location.name%></h4>
               <img class="img-rounded main_image" src="<%=location.main_image%>" alt="<%= location.name %>">
             </div>
@@ -25,22 +25,20 @@ By accessing and/or using this code snippet, you agree to AccuWeather’s terms 
   </div>
 </div>
 
-<div id="hidden_gems" class="container">
+
   <h3>Hidden Gems</h3>
-  <div class="row hidden_gems">
+  <div class="row">
     <% @locations.each do |location| %>
       <% if !location.main_attraction %>
         <div class="col-md-3 thumbnail">
-          <a href="/location/<%=location.id%>"><div>
+          <a href="/location/<%=location.id%>">
+            <div>
             <h4><%=location.name%></h4>
               <img class="img-rounded main_image" src="<%=location.main_image%>" alt="<%= location.name %>">
             </div>
           </a>
           <br>
-        <% end %>
-      </div>
+        </div>
+      <% end %>
     <% end %>
   </div>
-  <br>
-  <br>
-</div>

@@ -14,9 +14,8 @@
  *= require_self
  */
 
- // @import 'bootstrap-sprockets';
- @import 'bootstrap';
+@import 'bootstrap';
 
- // #navbar {
- //   float:right;
- // }
+body{
+  font-family: 'Antic Slab', serif;
+}

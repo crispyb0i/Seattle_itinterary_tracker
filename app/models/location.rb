@@ -4,6 +4,6 @@ class Location < ApplicationRecord
   has_many :images
 
   def self.search(search)
-    where("name LIKE ?","%#{search}%")
+    where("name ilike ?","%#{search}%")
   end
 end

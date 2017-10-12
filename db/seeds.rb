@@ -117,7 +117,7 @@ Location.create!(
   name: "Seattle Pinball Museum",
   description: "Entertainment center with unlimited play for one price, featuring classic & modern pinball games.",
   phone_number: "(206)623-0759",
-  website: "www.seattlepinballmuseum.com",
+  website: "http://www.seattlepinballmuseum.com",
   street_address: "508 Maynard Ave S",
   city_state: "Seattle, WA",
   main_image: "http://nebula.wsimg.com/ee374c634871750c6f7c7e5e42104742?AccessKeyId=6F9049FDF5F59D846CC7&disposition=0&alloworigin=1",
