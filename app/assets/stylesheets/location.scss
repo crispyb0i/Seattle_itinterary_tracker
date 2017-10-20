@@ -30,6 +30,11 @@ img {
 // #featured_locations {
 //   border:1px solid black;
 // }
+#header{
+  position: relative;
+    text-align: center;
+    color: white;
+}
 
 #homepage_image{
   width: 100%;
@@ -37,12 +42,31 @@ img {
   margin-top: -5%
 }
 
-#main_title {
-  font-size: 100px;
-  font-family: 'Love Ya Like A Sister', cursive;
+.main_title {
+//   font-size: 100px;
+//   font-family: 'Love Ya Like A Sister', cursive;
+  position: absolute;
+  float: right;
+  left: 1%;
+//     top: 35%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+    text-shadow: -5px 0 black
 }
 
 #search_picture {
   width: 300px;
   height: 250px;
+}
+
+#featured_locations {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+#hiddenGems {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
 }
