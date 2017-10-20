@@ -8,11 +8,12 @@
   <% end %>
   <span class="glyphicon glyphicon-map-marker"></span> <%=@location.street_address%> <%=@location.city_state%></h4>
 <img src="<%=@location.main_image%>" class="img-rounded" alt="">
-
+<br>
 <% if current_user %>
   <% if current_user.itinerary.include?(@location.id) %>
-    <%= button_to 'Remove from itinerary', remove_itinerary_path, :class => "btn btn-danger", :method => :patch, :style => "float:right" %>
+    <%= button_to 'Remove from itinerary', remove_itinerary_path, :class => "btn btn-danger", :method => :patch%>
   <% else %>
     <%= button_to 'Add to itinerary', itinerary_path, :class => "btn btn-primary", :method => :patch %>
   <% end %>
 <% end %>
+<br>
