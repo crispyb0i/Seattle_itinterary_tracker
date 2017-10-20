@@ -1,0 +1,17 @@
+<h1>Popular Attractions</h1>
+
+<div class="row featured">
+  <% @locations.each do |location| %>
+    <% if location.main_attraction %>
+      <div class="col-md-3 thumbnail">
+        <a href="/location/<%=location.id%>">
+          <div>
+          <h4><%=location.name%></h4>
+            <img class="img-rounded main_image" src="<%=location.main_image%>" alt="<%= location.name %>">
+          </div>
+        </a>
+        <br>
+      <% end %>
+    </div>
+  <% end %>
+</div>

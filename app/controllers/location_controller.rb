@@ -47,4 +47,8 @@ class LocationController < ApplicationController
    user.save
    redirect_to location_path(location)
    end
+
+   def popular
+     @locations = Location.all
+   end
 end

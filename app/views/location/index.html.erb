@@ -7,7 +7,9 @@
 </div>
 
 <div id="featured_locations">
-  <h3>Popular Attractions</h3>
+  <a href="/location/popular">
+    <h3>Popular Attractions</h3>
+  </a>
   <div class="row featured">
     <% @locations.limit(8).each do |location| %>
       <% if location.main_attraction %>
@@ -24,7 +26,6 @@
     <% end %>
   </div>
 </div>
-
 
   <h3>Hidden Gems</h3>
   <div class="row">
