@@ -1,8 +1,9 @@
-<div id="featured_locations">
-  <h1>Popular Attractions</h1>
-  <div class="row featured">
+<div id="hiddenGems">
+  <h1>Hidden Gems</h1>
+
+  <div class="row">
     <% @locations.each do |location| %>
-      <% if location.main_attraction %>
+      <% if !location.main_attraction %>
         <div class="col-md-3 img-thumbnail">
           <a href="/location/<%=location.id%>">
             <div>
@@ -11,8 +12,8 @@
             </div>
           </a>
           <br>
-        <% end %>
-      </div>
+        </div>
+      <% end %>
     <% end %>
   </div>
 </div>

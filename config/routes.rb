@@ -8,7 +8,8 @@ Rails.application.routes.draw do
   patch '/location/:id/itinerary' => 'location#itinerary', as: 'itinerary'
   patch '/location/:id/remove_itinerary' => 'location#remove_itinerary', as: 'remove_itinerary'
   get '/location/search' => 'location#search', as: 'search'
-  get '/location/popular' => 'location#popular', as: 'all'
+  get '/location/popular' => 'location#popular', as: 'popular'
+  get '/location/hidden_gems' => 'location#hidden_gems', as: 'hidden_gems'
 
   resources :users, :only => [:show]
 

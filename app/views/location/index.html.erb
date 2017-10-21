@@ -27,10 +27,11 @@
   </div>
 </div>
   <div id="hiddenGems">
-    <h3>Hidden Gems</h3>
-
+    <a href="/location/hidden_gems">
+      <h3>Hidden Gems</h3>
+    </a>
     <div class="row">
-      <% @locations.each do |location| %>
+      <% @locations.limit(16).each do |location| %>
         <% if !location.main_attraction %>
           <div class="col-md-3 img-thumbnail">
             <a href="/location/<%=location.id%>">

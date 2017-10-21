@@ -51,4 +51,8 @@ class LocationController < ApplicationController
    def popular
      @locations = Location.all
    end
+
+   def hidden_gems
+     @locations = Location.all
+   end
 end
