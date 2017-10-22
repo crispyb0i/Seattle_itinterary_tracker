@@ -15,5 +15,9 @@
   <% else %>
     <%= button_to 'Add to itinerary', itinerary_path, :class => "btn btn-primary", :method => :patch %>
   <% end %>
+  <% else %>
+
+    <h4><a href="/users/sign_in">Sign in</a> to add to Itinerary</h4>
+
 <% end %>
 <br>

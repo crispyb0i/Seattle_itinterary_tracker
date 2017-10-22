@@ -74,7 +74,7 @@ Location.create!(
   description: "One of the few authentic farmer's markets in the United States, this hub of delicious scents, delectable eats and delightful personalities attracts nine million visitors a year.",
   phone_number: "(206)682-7453",
   website: "http://pikeplacemarket.org/",
-  street_address: "Between Pike and Pine sts. at First Ave",
+  street_address: "Between Pike and Pine st. at First Ave",
   city_state: "Seattle, WA",
   main_image: "http://cdn-image.travelandleisure.com/sites/default/files/styles/720x450/public/201411-w-worlds-most-visited-tourist-attractions-pike-place-market.jpg?itok=uJsfFTY3",
   main_attraction: true
