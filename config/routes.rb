@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get '/location/search' => 'location#search', as: 'search'
   get '/location/popular' => 'location#popular', as: 'popular'
   get '/location/hidden_gems' => 'location#hidden_gems', as: 'hidden_gems'
+  get '/location/all' => 'location#all', as: 'all'
 
   resources :users, :only => [:show]
 

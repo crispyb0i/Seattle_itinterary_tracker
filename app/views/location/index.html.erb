@@ -31,7 +31,7 @@
       <h3>Hidden Gems</h3>
     </a>
     <div class="row">
-      <% @locations.limit(16).each do |location| %>
+      <% @locations.limit(17).each do |location| %>
         <% if !location.main_attraction %>
           <div class="col-md-3 img-thumbnail">
             <a href="/location/<%=location.id%>">
@@ -46,4 +46,6 @@
       <% end %>
     </div>
   </div>
-  <br><br><br>
+  <br>
+  <a id="all_page" href="/location/all">See all locations</a>
+  <br><br>

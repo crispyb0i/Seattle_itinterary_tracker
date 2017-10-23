@@ -55,4 +55,8 @@ class LocationController < ApplicationController
    def hidden_gems
      @locations = Location.all
    end
+
+   def all
+     @locations = Location.all
+   end
 end

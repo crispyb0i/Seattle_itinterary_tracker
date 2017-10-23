@@ -161,7 +161,7 @@ Location.create!(
   description: "Seattle may be known as the Emerald City, but the sparkling sapphire waters surrounding the city are another one of the region’s precious gems. Tempted to get out on the water yourself? Head to one of the city’s favorite aquatic playgrounds, the Center for Wooden Boats for one of their special Sunday Public Sails. Cruise around Lake Union for free on a spirit boat, steamboat, electric boat, schooner or yacht. Just be sure to come early, as the sailing tours are popular and often sell out.",
   phone_number: "(206)382-2628",
   website: "http://cwb.org/",
-  street_address: "1010 Valley Street Seattle, WA 98109",
+  street_address: "1010 Valley Street",
   city_state: "Seattle, WA",
   main_image: "https://81dix1oo56s3h5et73pjxme1-wpengine.netdna-ssl.com/magazine/wp-content/uploads/sites/10/2017/04/mason-bryant_seattle.jpg",
   main_attraction: false
@@ -171,8 +171,133 @@ Location.create!(
   description: "Remember when you were a kid and had a secret password or knock to enter your best friend’s clubhouse? Well, Capitol Hill’s trendy Needle & Thread Bar is kind of like that, but 100 times cooler. Pick up the old-school rotary phone tucked away next to the old bank vault door inside Tavern Law Bar and ask to get buzzed into the cozy, prohibition-style space.",
   phone_number: "(206)325-0133",
   website: "https://www.tavernlaw.com/needle-thread",
-  street_address: "1406 12th Ave Seattle, WA 98122",
+  street_address: "1406 12th Ave",
   city_state: "Seattle, WA",
   main_image: "https://static.wixstatic.com/media/d4360a_60bf7eb43ea3439ba8dac2ace9cda22f~mv2.jpg/v1/fill/w_745,h_533,al_c,q_85/d4360a_60bf7eb43ea3439ba8dac2ace9cda22f~mv2.webp",
+  main_attraction: false
+)
+Location.create!(
+  name: "Museum of Pop Culture",
+  description: "The Museum of Pop Culture, or MoPOP (earlier called EMP Museum) is a nonprofit museum dedicated to contemporary popular culture. It was founded by Microsoft co-founder Paul Allen in 2000 as the Experience Music Project. Since that time MoPOP has organized dozens of exhibits, 17 of which have toured across the US and internationally.
+
+  The museum, which used to be known as Experience Music Project and Science Fiction Museum and Hall of Fame (EMP|SFM) and later EMP Museum until November 2016, has founded many public programs including Sound Off!, an annual 21 and under battle-of-the-bands that supports the all-ages scene, and Pop Conference, an annual gathering of academics, critics, musicians, and music buffs",
+  phone_number: "(206)770-2700",
+  website: "http://www.mopop.org/",
+  street_address: "325 5th Avenue",
+  city_state: "Seattle, WA",
+  main_image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/EMPPano11.jpg/2560px-EMPPano11.jpg",
+  main_attraction: true
+)
+Location.create!(
+  name: "Gas Works Park",
+  description: "Once a productive coal gasification plant, the curious structure has been preserved and repurposed as a public park since its closure in 1956.
+
+  The plant primarily provided the city with gas for energy during its half-century of operation. It was officially acquired by the City of Seattle in 1962. Landscape architect Richard Haag piloted the development of the project, and eventually went on to win an American Society of Landscape Architects Presidents Award for his design. Haag and his team were responsible for retaining most of the plant’s original structure, as well as introducing oil-degrading enzymes into the surrounding area to stimulate the breakdown of toxic contaminants in the soil.",
+  phone_number: "(206)684-4075",
+  website: "http://www.seattle.gov/parks/find/parks/gas-works-park",
+  street_address: "2101 N Northlake Way",
+  city_state: "Seattle, WA",
+  main_image: "http://www.seattle.gov/images/Departments/ParksAndRecreation/Parks/GHI/GasWorksPark3.jpg",
+  main_attraction: true
+)
+Location.create!(
+  name: "Discovery Park",
+  description: "Discovery Park is a 534 acre natural area park operated by the Seattle Parks and Recreation. It is the largest city park in Seattle, and occupies most of the former Fort Lawton site. The site is one of breathtaking majesty. Situated on Magnolia Bluff overlooking Puget Sound, Discovery Park offers spectacular view of both the Cascade and the Olympic Mountain ranges. The secluded site includes two miles of protected tidal beaches as well as open meadow lands, dramatic sea cliffs, forest groves, active sand dunes, thickets and streams. The role of Discovery Park is to provide an open space of quiet and tranquility away from the stress and activity of the city, a sanctuary for wildlife, as well as an outdoor classroom for people to learn about the natural world. Maintained in its semi-natural condition the park will continue to offer a biologically rich and diverse natural area for urban dwellers and an unmatched opportunity for environmental education. ",
+  phone_number: "(206)386-4236",
+  website: "https://www.seattle.gov/parks/find/parks/discovery-park",
+  street_address: "3801 Discovery Park Blvd",
+  city_state: "Seattle, WA",
+  main_image: "https://www.uwb.edu/getattachment/orientation/transition-programs/husky-adventures/discovery-park-hiking-ha/hiking-discovery-park-HA.jpg",
+  main_attraction: true
+)
+Location.create!(
+  name: "Seattle Great Wheel",
+  description: "The Seattle Great Wheel is a giant Ferris wheel at Pier 57 on Elliott Bay in Seattle, Washington. With an overall height of 175 feet, it was the tallest Ferris wheel on the West Coast of the United States when it opened on June 29, 2012.",
+  phone_number: "(206)623-8607",
+  website: "https://seattlegreatwheel.com/",
+  street_address: "1301 Alaskan Way",
+  city_state: "Seattle, WA",
+  main_image: "http://uploads.visitseattle.org/2015/03/GreatWheel_DavidNewman-e1469640547811-900x600.jpg",
+  main_attraction: true
+)
+Location.create!(
+  name: "Underground Tour",
+  description: "The Underground Paranormal Experience gives you the expertise and equipment to do your own investigation. Search for paranormal activity in the famous Seattle Underground using the same sophisticated investigative equipment employed by trained professional paranormal investigators. The Underground Paranormal Experience may haunt you for the rest of your life. Don’t Watch Ghost Hunters. Be One!",
+  phone_number: "(206) 682-4646",
+  website: "http://www.undergroundtour.com/",
+  street_address: "614 1st Ave",
+  city_state: "Seattle, WA",
+  main_image: "https://b.citypass.net/blog/post/20111027-1-hall2.jpg",
+  main_attraction: true
+)
+Location.create!(
+  name: "Kubota Gardens",
+  description: "The gardens’ founder Fujitaro Kubota moved from the Japanese island of Shikoku in 1907, establishing a new home in Seattle. A self-taught gardener and landscaper, Kubota purchased a five-acre plot of marshland in 1927 and began work on his magnum opus. Using traditional Japanese design techniques which incorporated water features, walking bridges, and placed stones, Kubota began creating his vision using the plant materials on hand. The site expanded quickly, encompassing 30 acres by 1930.",
+  phone_number: "(206)725-5060",
+  website: "https://www.seattle.gov/parks/find/parks/kubota-garden",
+  street_address: "9817 55th Ave South",
+  city_state: "Seattle, WA",
+  main_image: "https://media-cdn.tripadvisor.com/media/photo-s/04/bf/f9/10/kubota-garden.jpg",
+  main_attraction: false
+)
+
+Location.create!(
+  name: "Lake View Cemetery",
+  description: "Located on a breathtaking expanse atop Capitol Hill, this burial ground was established in 1872 as the Seattle Masonic Cemetery, changing its name to the Lake View Cemetery in 1890. Now nestled in the middle of an affluent neighborhood, the cemetery serves as the final resting place of several iconic American figures, including poet Denise Levertov, painter Cordelia Wilson, founder of Nordstrom department store John W. Nordstrom, and a number of Seattle’s great pioneers. Having been founded only seven years after the Civil War, this graveyard has become deeply intertwined in America’s short but rich history.",
+  phone_number: "(206) 322-1582",
+  website: "http://lakeviewcemeteryassociation.com/",
+  street_address: "9817 55th Ave South",
+  city_state: "Seattle, WA",
+  main_image: "https://upload.wikimedia.org/wikipedia/commons/a/ae/GarfieldMonument.jpg",
+  main_attraction: false
+)
+Location.create!(
+  name: "Seattle Aquarium",
+  description: "The Seattle Aquarium is the ninth largest aquarium in the U.S. by attendance and among the top five paid visitor attractions in the Puget Sound region. Since our opening, we’ve hosted over 22 million visitors and provided marine conservation education to over 1.6 million school children. We’re proud to be accredited by the Association of Zoos and Aquariums.",
+  phone_number: "(206)386-4300",
+  website: "http://www.seattleaquarium.org/",
+  street_address: "1483 Alaskan Way",
+  city_state: "Seattle, WA",
+  main_image: "https://www.citypass.com/img-88f4a9a/products/seattle/attractions/seattleaquarium/gallery/seattleaquarium-gallery-dome.jpg",
+  main_attraction: true
+)
+Location.create!(
+  name: "Pacific Science Center",
+  description: "Pacific Science Center ignites curiosity in every child and fuels a passion for discovery, experimentation, and critical thinking in all of us.",
+  phone_number: "(206)443-2001",
+  website: "https://www.pacificsciencecenter.org/",
+  street_address: "200 2nd Ave N",
+  city_state: "Seattle, WA",
+  main_image: "https://www.pacificsciencecenter.org/wp-content/uploads/pacsci-view-16x9-2500x1406-compressed.jpg",
+  main_attraction: true
+)
+Location.create!(
+  name: "Smith Tower",
+  description: "Smith Tower is a skyscraper in Pioneer Square in Seattle, Washington. Completed in 1914, the 38-story, 484 ft tower is the oldest skyscraper in the city, and was among the tallest skyscrapers outside New York City at the time of its completion.",
+  phone_number: "(206)624-0414",
+  website: "http://www.smithtower.com/",
+  street_address: "506 2nd Ave",
+  city_state: "Seattle, WA",
+  main_image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/SmithTower_Seattle_WA_USA2.jpg/1280px-SmithTower_Seattle_WA_USA2.jpg",
+  main_attraction: true
+)
+Location.create!(
+  name: "Seattle Central Library",
+  description: "The Seattle Public Library's Central Library is the flagship library of The Seattle Public Library system. The 11-story glass and steel building in downtown Seattle, Washington was opened to the public on Sunday, May 23, 2004.",
+  phone_number: "(206)624-0414",
+  website: "http://www.spl.org/locations/central-library",
+  street_address: "1000 4th Ave",
+  city_state: "Seattle, WA",
+  main_image: "http://www.demcointeriors.com/wp-content/uploads/sites/4/2015/06/spl-17-1024x682.jpg",
+  main_attraction: true
+)
+Location.create!(
+  name: "Ella Bailey Park",
+  description: "The Seattle Public Library's Central Library is the flagship library of The Seattle Public Library system. The 11-story glass and steel building in downtown Seattle, Washington was opened to the public on Sunday, May 23, 2004.",
+  phone_number: "(206)684-4075",
+  website: "http://www.seattle.gov/parks/find/parks/ella-bailey-park",
+  street_address: "2601 W Smith St.",
+  city_state: "Seattle, WA",
+  main_image: "https://www.beautifulwashington.com/images/king-conty-parks-seattle-ella-bailey/ella-bailey-park-4.jpg",
   main_attraction: false
 )

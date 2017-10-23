@@ -1,0 +1,12 @@
+<h1>All Locations</h1>
+
+<% @locations.each do |location| %>
+    <div class="col-md-3 img-thumbnail">
+      <a href="/location/<%=location.id%>">
+        <div>
+        <h4><%=location.name%></h4>
+          <img class="img-rounded main_image" src="<%=location.main_image%>" alt="<%= location.name %>">
+        </div>
+      </a>
+    </div>
+  <% end %>
